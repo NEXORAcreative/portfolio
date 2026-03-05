@@ -1,80 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NEXORA Creative Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      background-color: #f4f4f4;
-    }
-    header {
-      background-color: #1e1e1e;
-      color: white;
-      padding: 30px 10px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-      letter-spacing: 2px;
-    }
-    h2 {
-      margin-top: 40px;
-      margin-bottom: 20px;
-      color: #333;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding-bottom: 40px;
-    }
-    .gallery img {
-      width: 250px;
-      border-radius: 8px;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
-      transition: transform 0.3s;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-    .hire-me {
-      background-color: #25d366;
-      color: white;
-      padding: 15px 25px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-size: 1.2em;
-      display: inline-block;
-      margin: 30px 0 50px 0;
-      transition: background 0.3s;
-    }
-    .hire-me:hover {
-      background-color: #1ebe57;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXORA Creative Portfolio</title>
+<style>
+  /* Basic body and font */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    text-align: center;
+  }
+
+  /* Header style */
+  header {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 40px 20px;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 3em;
+    letter-spacing: 2px;
+  }
+
+  header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #ccc;
+  }
+
+  /* Gallery section */
+  h2 {
+    margin-top: 50px;
+    color: #1e1e1e;
+    font-size: 2em;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+
+  .gallery img {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  }
+
+  /* WhatsApp button */
+  .hire-me {
+    display: inline-block;
+    margin-bottom: 50px;
+    background-color: #25d366;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: background 0.3s;
+  }
+
+  .hire-me:hover {
+    background-color: #1ebe57;
+  }
+</style>
 </head>
 <body>
 
+<!-- Header -->
 <header>
   <h1>NEXORA Creative</h1>
+  <p>Your Graphic Design Portfolio</p>
 </header>
 
+<!-- Gallery Section -->
 <h2>Check My Work</h2>
-
 <div class="gallery">
-  <!-- Replace these links with your actual images from the folder -->
-  <img src="https://drive.google.com/uc?export=view&id=1XYZ" alt="Work 1">
-  <img src="https://drive.google.com/uc?export=view&id=2XYZ" alt="Work 2">
-  <img src="https://drive.google.com/uc?export=view&id=3XYZ" alt="Work 3">
-  <!-- Add more images like above if needed -->
+  <img src="11f313cc6a04a67a22cee9b88b452b9b.jpg" alt="Work 1">
+  <img src="ed8f22d3f3378bce3ceee11665d618e7.jpg" alt="Work 2">
+  <img src="7282ea85178a989bb62757a08acf19ad.jpg" alt="Work 3">
+  <img src="6eabd9fa7eeb763aff801ae98e4ab321.jpg" alt="Work 4">
+  <img src="Picsart_25-11-17_19-14-37-606.jpg" alt="Work 5">
+  <img src="173f09d3ffaff5f2f3035f7266e48a85.jpg" alt="Work 6">
 </div>
 
+<!-- WhatsApp Button -->
 <a class="hire-me" href="https://wa.me/919528503698" target="_blank">Hire Me on WhatsApp</a>
 
 </body>
