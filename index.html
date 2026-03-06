@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>NEXORA Creative | Thumbnail Designer</title>
+<title>Nexora Creative</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
+ Logo NEXORA creative
+  
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
@@ -16,422 +16,183 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-scroll-behavior:smooth;
+font-family:Poppins;
 }
 
 body{
-
-background:#050505;
+background:#0a0a0a;
 color:white;
-overflow-x:hidden;
-
+text-align:center;
 }
 
-/* animated background */
-
-body::before{
-
-content:"";
-position:fixed;
-width:500px;
-height:500px;
-background:radial-gradient(circle,#ffd000,transparent);
-filter:blur(180px);
-top:-100px;
-left:-100px;
-animation:move 12s infinite alternate;
-
-}
-
-body::after{
-
-content:"";
-position:fixed;
-width:500px;
-height:500px;
-background:radial-gradient(circle,#ff9d00,transparent);
-filter:blur(180px);
-bottom:-100px;
-right:-100px;
-animation:move 10s infinite alternate;
-
-}
-
-@keyframes move{
-
-0%{transform:translate(0,0)}
-100%{transform:translate(100px,100px)}
-
-}
-
-/* navbar */
-
-nav{
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 8%;
-position:fixed;
-top:0;
-width:100%;
-background:rgba(0,0,0,0.8);
-backdrop-filter:blur(10px);
-z-index:1000;
-
+header{
+padding:40px 20px;
 }
 
 .logo{
-
-font-size:26px;
-font-weight:900;
-
+width:180px;
 }
 
-.logo span{
-
-color:#FFD700;
-
+nav{
+margin-top:20px;
 }
 
 nav a{
-
-margin-left:30px;
-text-decoration:none;
 color:white;
-font-size:15px;
-position:relative;
-
+text-decoration:none;
+margin:0 15px;
+font-size:16px;
+opacity:.8;
 }
 
 nav a:hover{
-
-color:#FFD700;
-
+opacity:1;
 }
 
-/* hero */
-
 .hero{
-
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
+margin-top:60px;
 padding:20px;
-
 }
 
 .hero h1{
-
-font-size:70px;
-font-weight:900;
-line-height:1.1;
-
-}
-
-.hero span{
-
-color:#FFD700;
-
+font-size:38px;
+font-weight:600;
 }
 
 .hero p{
-
-margin-top:20px;
-color:#bbb;
-max-width:600px;
-
+margin-top:15px;
+font-size:18px;
+color:#aaa;
 }
 
 .btn{
-
-margin-top:40px;
-padding:18px 45px;
-border-radius:8px;
-background:#FFD700;
+display:inline-block;
+margin-top:30px;
+padding:14px 35px;
+background:gold;
 color:black;
-font-weight:700;
+border-radius:30px;
 text-decoration:none;
-transition:0.3s;
-
+font-weight:600;
+transition:.3s;
 }
 
 .btn:hover{
-
 transform:scale(1.05);
-
 }
 
-/* skills */
+.section{
+margin-top:100px;
+padding:20px;
+}
 
-.skills{
+.section h2{
+font-size:28px;
+margin-bottom:20px;
+}
 
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.thumb{
+background:#1a1a1a;
+height:160px;
+border-radius:10px;
 display:flex;
+align-items:center;
 justify-content:center;
-gap:70px;
-padding:50px 10%;
-flex-wrap:wrap;
-border-top:1px solid #111;
-border-bottom:1px solid #111;
-
+color:#777;
 }
 
-.skill{
-
-color:#aaa;
-font-size:18px;
-
+.contact{
+margin-top:80px;
+padding-bottom:80px;
 }
 
-/* portfolio */
-
-.portfolio{
-
-padding:120px 10%;
-text-align:center;
-
-}
-
-.portfolio h2{
-
-font-size:45px;
-margin-bottom:20px;
-
-}
-
-.card{
-
-background:#0e0e0e;
-padding:50px;
-border-radius:20px;
-max-width:450px;
-margin:auto;
-border:1px solid #222;
-transition:0.4s;
-
-}
-
-.card:hover{
-
-transform:translateY(-10px);
-
-}
-
-.card a{
-
-display:inline-block;
-margin-top:20px;
-border-bottom:2px solid #FFD700;
-color:white;
+.contact a{
+display:block;
+margin:10px;
+color:gold;
 text-decoration:none;
-
 }
-
-/* connect */
-
-.connect{
-
-padding:120px 10%;
-text-align:center;
-
-}
-
-.connect h2{
-
-font-size:50px;
-margin-bottom:10px;
-
-}
-
-.connect span{
-
-color:#FFD700;
-
-}
-
-.connect p{
-
-color:#aaa;
-margin-bottom:30px;
-
-}
-
-/* whatsapp button */
-
-.whatsapp{
-
-display:inline-block;
-padding:20px 40px;
-border-radius:60px;
-background:linear-gradient(45deg,#25D366,#00ff7b);
-font-size:18px;
-font-weight:700;
-color:white;
-text-decoration:none;
-box-shadow:0 0 25px #25D366;
-transition:0.3s;
-
-}
-
-.whatsapp:hover{
-
-transform:scale(1.07);
-box-shadow:0 0 40px #25D366;
-
-}
-
-/* form */
-
-.form{
-
-max-width:500px;
-margin:50px auto 0;
-
-}
-
-.form input,
-.form textarea{
-
-width:100%;
-padding:18px;
-margin-bottom:20px;
-border-radius:10px;
-border:none;
-background:#111;
-color:white;
-
-}
-
-.form button{
-
-width:100%;
-padding:18px;
-background:#FFD700;
-border:none;
-font-weight:700;
-border-radius:10px;
-cursor:pointer;
-
-}
-
-/* footer */
 
 footer{
-
-text-align:center;
-padding:40px;
-color:#555;
-border-top:1px solid #111;
-
+margin-top:40px;
+padding:20px;
+color:#666;
+font-size:14px;
 }
 
 </style>
-
 </head>
 
 <body>
 
+<header>
+
+<img src="logo.png" class="logo">
+
 <nav>
-
-<div class="logo">
-NEXORA <span>Creative</span>
-</div>
-
-<div>
-
+<a href="#">Home</a>
 <a href="#work">Work</a>
-<a href="#connect">Connect</a>
-<a href="#connect">Hire Me</a>
-
-</div>
-
+<a href="#contact">Contact</a>
 </nav>
+
+</header>
 
 <section class="hero">
 
-<h1>
-
-High-CTR <br>
-<span>YouTube Thumbnails</span>
-
-</h1>
+<h1>High CTR Thumbnail Designer</h1>
 
 <p>
-
-I design professional YouTube thumbnails that attract clicks,
-boost CTR and help videos perform better.
-
+I design professional YouTube thumbnails that grab attention  
+and increase your click-through rate.
 </p>
 
-<a href="#work" class="btn">View My Work</a>
+<a class="btn" href="https://drive.google.com/drive/folders/15NWPQOTtkRJ0VDDd2KPna1C3maDxd8ba" target="_blank">
+View My Thumbnails
+</a>
 
 </section>
 
-<div class="skills">
+<section class="section" id="work">
 
-<div class="skill">Photoshop Expert</div>
-<div class="skill">High CTR Design</div>
-<div class="skill">Fast Delivery</div>
-<div class="skill">Creative Concepts</div>
+<h2>My Thumbnail Work</h2>
 
-</div>
+<div class="gallery">
 
-<section class="portfolio" id="work">
-
-<h2>Thumbnail Portfolio</h2>
-
-<div class="card">
-
-<h3>YouTube Thumbnail Designs</h3>
-
-<p>Click below to explore my thumbnail collection.</p>
-
-<a href="https://drive.google.com/drive/folders/15NWPQOTtkRJ0VDDd2KPna1C3maDxd8ba" target="_blank">
-
-View Thumbnails
-
-</a>
+<div class="thumb">Thumbnail Preview</div>
+<div class="thumb">Thumbnail Preview</div>
+<div class="thumb">Thumbnail Preview</div>
+<div class="thumb">Thumbnail Preview</div>
 
 </div>
 
 </section>
 
-<section class="connect" id="connect">
+<section class="contact" id="contact">
 
-<h2>Let's <span>Connect</span></h2>
+<h2>Let's Work Together</h2>
 
-<p>Need high CTR thumbnails for your channel?</p>
-
-<a class="whatsapp" href="https://wa.me/919528503698">
-
-💬 Contact Me on WhatsApp
-
+<a href="mailto:kanhaeditorofficial@gmail.com">
+Email: kanhaeditorofficial@gmail.com
 </a>
 
-<div class="form">
-
-<input type="text" placeholder="Your Name">
-
-<input type="email" placeholder="Email Address">
-
-<textarea rows="5" placeholder="Project Details"></textarea>
-
-<button>Send Message</button>
-
-</div>
+<a href="https://wa.me/" target="_blank">
+Chat on WhatsApp
+</a>
 
 </section>
 
 <footer>
 
-© 2026 NEXORA Creative
+© 2026 Nexora Creative
 
 </footer>
 
 </body>
-
 </html>
