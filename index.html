@@ -11,52 +11,20 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+font-family:Poppins, sans-serif;
 scroll-behavior:smooth;
 }
 
 body{
-background:#0f0f0f;
+background:linear-gradient(135deg,#0f0f0f,#1a1a1a);
 color:white;
 overflow-x:hidden;
-}
-
-/* HEADER */
-
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 8%;
-position:sticky;
-top:0;
-background:#0f0f0f;
-z-index:1000;
-}
-
-.logo{
-font-size:28px;
-font-weight:bold;
-color:#00e5ff;
-letter-spacing:1px;
-}
-
-nav a{
-margin-left:30px;
-text-decoration:none;
-color:white;
-font-size:16px;
-transition:0.3s;
-}
-
-nav a:hover{
-color:#00e5ff;
 }
 
 /* HERO */
 
 .hero{
-height:90vh;
+height:100vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -65,97 +33,147 @@ text-align:center;
 padding:20px;
 }
 
-.hero h1{
+/* TITLE */
+
+.logo{
 font-size:42px;
-margin-bottom:15px;
+font-weight:700;
+background:linear-gradient(90deg,#ffcc00,#ff7b00);
+-webkit-background-clip:text;
+color:transparent;
+margin-bottom:20px;
+letter-spacing:1px;
 }
+
+/* MAIN TEXT */
+
+.hero h1{
+font-size:34px;
+max-width:700px;
+line-height:1.4;
+margin-bottom:25px;
+}
+
+/* TRUST WORDS */
 
 .trust{
-margin-top:10px;
-color:#aaa;
-font-size:15px;
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+justify-content:center;
+margin-bottom:35px;
 }
 
-.btn{
-margin-top:25px;
-padding:14px 32px;
-border:none;
-background:#00e5ff;
-color:black;
-font-size:16px;
+.trust span{
+padding:10px 18px;
+background:#1f1f1f;
 border-radius:30px;
+font-size:14px;
+box-shadow:0 0 15px rgba(255,170,0,0.4);
+transition:.3s;
+}
+
+.trust span:hover{
+transform:scale(1.08);
+box-shadow:0 0 25px #ffb300;
+}
+
+/* BUTTON */
+
+.btn{
+padding:16px 40px;
+font-size:16px;
+border:none;
+border-radius:40px;
 cursor:pointer;
-transition:0.3s;
-box-shadow:0 0 15px #00e5ff;
+background:linear-gradient(90deg,#ffcc00,#ff7b00);
+color:black;
+font-weight:600;
+box-shadow:0 0 25px rgba(255,170,0,.6);
+transition:.3s;
 }
 
 .btn:hover{
 transform:scale(1.05);
-box-shadow:0 0 30px #00e5ff;
+box-shadow:0 0 45px #ffb300;
 }
 
-/* WORK */
+/* WORK SECTION */
 
 .work{
-padding:100px 10%;
+padding:120px 10%;
 text-align:center;
 }
 
+.work h2{
+font-size:30px;
+margin-bottom:40px;
+}
+
 .folder{
-width:220px;
-height:180px;
+width:260px;
+height:200px;
 margin:auto;
-background:#1a1a1a;
-border-radius:15px;
+background:#1f1f1f;
+border-radius:20px;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 cursor:pointer;
-transition:0.3s;
-box-shadow:0 0 20px rgba(0,229,255,0.2);
+transition:.3s;
+box-shadow:0 0 30px rgba(255,170,0,.3);
 }
 
 .folder:hover{
-transform:scale(1.05);
-box-shadow:0 0 40px #00e5ff;
+transform:scale(1.08);
+box-shadow:0 0 50px #ffb300;
 }
 
-.folder span{
-margin-top:10px;
-font-size:16px;
+.folder i{
+font-size:55px;
+margin-bottom:10px;
 }
 
 /* CONNECT */
 
 .connect{
-padding:100px 10%;
+padding:120px 10%;
 text-align:center;
 }
 
-.whatsapp-btn{
-display:inline-block;
-margin-top:20px;
-padding:14px 32px;
-background:#25D366;
-color:white;
-border-radius:30px;
-text-decoration:none;
-font-size:16px;
-box-shadow:0 0 20px #25D366;
-transition:0.3s;
+.connect h2{
+font-size:30px;
+margin-bottom:15px;
 }
 
-.whatsapp-btn:hover{
+.whatsapp{
+display:inline-block;
+margin-top:25px;
+padding:16px 35px;
+background:#25D366;
+color:white;
+border-radius:40px;
+font-weight:600;
+text-decoration:none;
+box-shadow:0 0 25px #25D366;
+transition:.3s;
+}
+
+.whatsapp:hover{
 transform:scale(1.05);
-box-shadow:0 0 40px #25D366;
+box-shadow:0 0 45px #25D366;
 }
 
 /* CONTACT FORM */
 
 .contact{
-padding:100px 10%;
+padding:120px 10%;
 text-align:center;
+}
+
+.contact h2{
+margin-bottom:35px;
 }
 
 form{
@@ -167,24 +185,25 @@ gap:15px;
 }
 
 input,textarea{
-padding:12px;
+padding:14px;
 border:none;
-border-radius:8px;
-background:#1a1a1a;
+border-radius:10px;
+background:#1f1f1f;
 color:white;
 }
 
-button{
-padding:12px;
-background:#00e5ff;
+.send{
+background:linear-gradient(90deg,#ffcc00,#ff7b00);
 border:none;
-border-radius:25px;
+padding:14px;
+border-radius:30px;
 cursor:pointer;
-box-shadow:0 0 15px #00e5ff;
+font-weight:600;
+box-shadow:0 0 20px rgba(255,170,0,.5);
 }
 
-button:hover{
-box-shadow:0 0 30px #00e5ff;
+.send:hover{
+box-shadow:0 0 40px #ffb300;
 }
 
 </style>
@@ -192,24 +211,19 @@ box-shadow:0 0 30px #00e5ff;
 
 <body>
 
-<header>
+<section class="hero">
 
 <div class="logo">Nexora Creative</div>
 
-<nav>
-<a href="#work">Work</a>
-<a href="#connect">Hire Me</a>
-<a href="#connect">Connect</a>
-</nav>
-
-</header>
-
-<section class="hero">
-
-<h1>High-CTR YouTube Thumbnails That Get Clicks</h1>
+<h1>High-CTR YouTube Thumbnails That Make People Click</h1>
 
 <div class="trust">
-Photoshop Expert • High-CTR Specialist • Trusted by Creators • Fast Delivery
+
+<span>Photoshop Expert</span>
+<span>High-CTR Specialist</span>
+<span>Trusted by Creators</span>
+<span>Fast Delivery</span>
+
 </div>
 
 <a href="#work">
@@ -221,26 +235,25 @@ Photoshop Expert • High-CTR Specialist • Trusted by Creators • Fast Delive
 <section class="work" id="work">
 
 <h2>My Thumbnail Work</h2>
-<br><br>
 
 <div class="folder"
 onclick="window.open('https://drive.google.com/drive/folders/15NWPQOTtkRJ0VDDd2KPna1C3maDxd8ba')">
 
-📁
-<span>View My Thumbnails</span>
+<div style="font-size:60px;">📁</div>
+
+<p>Open Thumbnail Folder</p>
 
 </div>
 
 </section>
 
-<section class="connect" id="connect">
+<section class="connect">
 
 <h2>Let's Connect</h2>
-<br>
 
 <p>WhatsApp: 9588503698</p>
 
-<a class="whatsapp-btn"
+<a class="whatsapp"
 href="https://wa.me/919588503698"
 target="_blank">
 
@@ -254,7 +267,7 @@ Connect Me On WhatsApp
 
 <h2>Send Me a Message</h2>
 
-<form action="mailto:kanhaeditorofficial@gmail.com" method="post" enctype="text/plain">
+<form action="mailto:kanhaeditorofficial@gmail.com" method="post">
 
 <input type="text" placeholder="Your Name" required>
 
@@ -262,11 +275,11 @@ Connect Me On WhatsApp
 
 <textarea rows="5" placeholder="Your Message"></textarea>
 
-<button type="submit">Send Email</button>
+<button class="send">Send Email</button>
 
 </form>
 
 </section>
 
 </body>
-</html>
+  </html>
