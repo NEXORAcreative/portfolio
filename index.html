@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -20,7 +21,6 @@ font-family:'Outfit',sans-serif;
 body{
 background:#050505;
 color:white;
-overflow-x:hidden;
 }
 
 /* NAVBAR */
@@ -29,31 +29,32 @@ nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 5%;
+padding:20px 8%;
 position:fixed;
-width:100%;
 top:0;
-background:rgba(0,0,0,0.85);
-backdrop-filter:blur(10px);
+width:100%;
+background:#000;
+border-bottom:1px solid #111;
 }
 
 .logo{
-display:flex;
-align-items:center;
-gap:10px;
-}
-
-.logo img{
-width:45px;
-}
-
-.logo h2{
-font-size:18px;
-letter-spacing:1px;
+font-size:20px;
+font-weight:800;
 }
 
 .logo span{
-color:gold;
+color:#FFD700;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:15px;
+}
+
+nav a:last-child{
+color:#FFD700;
 }
 
 /* HERO */
@@ -69,27 +70,28 @@ padding:20px;
 }
 
 .hero h1{
-font-size:55px;
+font-size:60px;
 font-weight:900;
+line-height:1.1;
 }
 
 .hero span{
-color:gold;
+color:#FFD700;
 }
 
 .hero p{
-color:#aaa;
 margin-top:15px;
-max-width:500px;
+color:#aaa;
+max-width:550px;
 }
 
 .btn{
 margin-top:30px;
-padding:15px 40px;
-background:gold;
+padding:16px 45px;
+background:#FFD700;
 color:black;
 font-weight:700;
-border-radius:6px;
+border-radius:8px;
 text-decoration:none;
 }
 
@@ -98,26 +100,28 @@ text-decoration:none;
 .skills{
 display:flex;
 justify-content:center;
-gap:40px;
-padding:30px;
-border-top:1px solid #222;
-border-bottom:1px solid #222;
+gap:60px;
+padding:40px 10%;
+border-top:1px solid #111;
+border-bottom:1px solid #111;
+flex-wrap:wrap;
 }
 
-.skills div{
+.skill{
 color:#aaa;
+font-size:16px;
 }
 
 /* PORTFOLIO */
 
 .portfolio{
-padding:80px 5%;
+padding:90px 10%;
 text-align:center;
 }
 
 .portfolio h2{
 font-size:40px;
-margin-bottom:20px;
+margin-bottom:30px;
 }
 
 .card{
@@ -132,27 +136,29 @@ border:1px solid #222;
 .card a{
 display:inline-block;
 margin-top:20px;
+border-bottom:2px solid #FFD700;
 color:white;
-border-bottom:2px solid gold;
 text-decoration:none;
 }
 
-/* CONTACT */
+/* WHATSAPP */
 
 .contact{
-padding:80px 5%;
+padding:80px 10%;
 text-align:center;
 }
 
-.contact a{
+.whatsapp-btn{
+
 display:inline-block;
-margin:10px;
-padding:15px 25px;
-border-radius:30px;
-background:#111;
-border:1px solid #333;
+background:#25D366;
+padding:16px 35px;
+border-radius:50px;
 text-decoration:none;
 color:white;
+font-weight:700;
+margin-top:20px;
+
 }
 
 /* FOOTER */
@@ -172,20 +178,22 @@ border-top:1px solid #111;
 <nav>
 
 <div class="logo">
-<img src="logo.png">
-<h2>NEXORA <span>Creative</span></h2>
+NEXORA <span>Creative</span>
 </div>
 
 <div>
 <a href="#work">Work</a>
-<a href="#contact" style="margin-left:20px;color:gold;">Hire Me</a>
+<a href="#contact">Hire Me</a>
 </div>
 
 </nav>
 
 <section class="hero">
 
-<h1>High-CTR <span>YouTube Thumbnails</span></h1>
+<h1>
+High-CTR <br>
+<span>YouTube Thumbnails</span>
+</h1>
 
 <p>
 I design professional YouTube thumbnails that attract clicks,
@@ -198,10 +206,10 @@ boost CTR and make your videos stand out.
 
 <div class="skills">
 
-<div>Photoshop Expert</div>
-<div>High CTR Design</div>
-<div>Fast Delivery</div>
-<div>Creative Concepts</div>
+<div class="skill">Photoshop Expert</div>
+<div class="skill">High CTR Design</div>
+<div class="skill">Fast Delivery</div>
+<div class="skill">Creative Concepts</div>
 
 </div>
 
@@ -213,14 +221,10 @@ boost CTR and make your videos stand out.
 
 <h3>YouTube Thumbnail Designs</h3>
 
-<p>
-Click below to explore my professional thumbnail collection.
-</p>
+<p>Click below to explore my thumbnail collection.</p>
 
 <a href="https://drive.google.com/drive/folders/15NWPQOTtkRJ0VDDd2KPna1C3maDxd8ba" target="_blank">
-
 View Thumbnails
-
 </a>
 
 </div>
@@ -229,17 +233,17 @@ View Thumbnails
 
 <section class="contact" id="contact">
 
-<h2>Let's Work Together</h2>
+<h2>Contact Me</h2>
 
-<a href="#">Email Me</a>
-<a href="#">Instagram</a>
-<a href="#">Telegram</a>
+<a class="whatsapp-btn" href="https://wa.me/919528503698">
+Contact Me on WhatsApp
+</a>
 
 </section>
 
 <footer>
 
-© 2026 NEXORA Creative. All Rights Reserved.
+© 2026 NEXORA Creative
 
 </footer>
 
