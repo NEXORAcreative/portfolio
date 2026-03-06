@@ -6,125 +6,172 @@
 
 <title>Nexora Creative</title>
 
- Logo NEXORA creative
-  
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Poppins;
-}
-
 body{
-background:#0a0a0a;
+margin:0;
+font-family:Arial;
+background:#0b0b0b;
 color:white;
-text-align:center;
+scroll-behavior:smooth;
 }
 
-header{
-padding:40px 20px;
-}
-
-.logo{
-width:180px;
-}
+/* NAVBAR */
 
 nav{
-margin-top:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+background:#000;
+position:sticky;
+top:0;
+z-index:100;
 }
 
-nav a{
+.logo img{
+height:50px;
+}
+
+.menu a{
+margin:0 15px;
 color:white;
 text-decoration:none;
-margin:0 15px;
-font-size:16px;
-opacity:.8;
+font-weight:bold;
 }
 
-nav a:hover{
-opacity:1;
+.menu a:hover{
+color:#ffd700;
 }
+
+/* HERO */
 
 .hero{
-margin-top:60px;
-padding:20px;
+text-align:center;
+padding:80px 20px;
 }
 
 .hero h1{
-font-size:38px;
-font-weight:600;
+font-size:40px;
+color:#ffd700;
+margin-bottom:10px;
 }
 
 .hero p{
-margin-top:15px;
 font-size:18px;
-color:#aaa;
+opacity:.8;
 }
+
+/* BUTTON */
 
 .btn{
 display:inline-block;
-margin-top:30px;
-padding:14px 35px;
-background:gold;
+margin-top:25px;
+padding:14px 30px;
+background:#ffd700;
 color:black;
-border-radius:30px;
+font-weight:bold;
+border-radius:8px;
 text-decoration:none;
-font-weight:600;
+box-shadow:0 0 20px #ffd700;
 transition:.3s;
 }
 
 .btn:hover{
 transform:scale(1.05);
+box-shadow:0 0 30px #ffd700;
 }
 
-.section{
-margin-top:100px;
-padding:20px;
+/* WORK SECTION */
+
+.work{
+text-align:center;
+padding:80px 20px;
 }
 
-.section h2{
-font-size:28px;
-margin-bottom:20px;
+.folder{
+width:220px;
+margin:auto;
+padding:40px;
+border-radius:15px;
+background:#111;
+box-shadow:0 0 20px rgba(255,215,0,.4);
+transition:.3s;
 }
 
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-padding:20px;
+.folder:hover{
+transform:scale(1.05);
+box-shadow:0 0 30px gold;
 }
 
-.thumb{
-background:#1a1a1a;
-height:160px;
-border-radius:10px;
-display:flex;
-align-items:center;
-justify-content:center;
-color:#777;
+.folder a{
+text-decoration:none;
+color:white;
+font-weight:bold;
 }
+
+/* CONTACT */
 
 .contact{
-margin-top:80px;
-padding-bottom:80px;
+text-align:center;
+padding:80px 20px;
 }
 
-.contact a{
-display:block;
-margin:10px;
-color:gold;
+.whatsapp{
+display:inline-block;
+background:#25D366;
+padding:15px 30px;
+border-radius:10px;
+color:white;
 text-decoration:none;
+font-weight:bold;
+box-shadow:0 0 20px #25D366;
+transition:.3s;
 }
+
+.whatsapp:hover{
+transform:scale(1.05);
+box-shadow:0 0 30px #25D366;
+}
+
+/* FORM */
+
+form{
+max-width:400px;
+margin:auto;
+margin-top:40px;
+}
+
+input,textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+background:#111;
+border:1px solid #333;
+color:white;
+border-radius:6px;
+}
+
+button{
+width:100%;
+padding:14px;
+background:#ffd700;
+border:none;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+box-shadow:0 0 20px #ffd700;
+}
+
+/* FOOTER */
 
 footer{
-margin-top:40px;
+text-align:center;
 padding:20px;
-color:#666;
-font-size:14px;
+opacity:.6;
 }
 
 </style>
@@ -132,59 +179,77 @@ font-size:14px;
 
 <body>
 
-<header>
-
-<img src="logo.png" class="logo">
+<!-- NAVBAR -->
 
 <nav>
-<a href="#">Home</a>
-<a href="#work">Work</a>
-<a href="#contact">Contact</a>
+
+<div class="logo">
+<img src="Logo NEXORA creative.png">
+</div>
+
+<div class="menu">
+<a href="#work">WORK</a>
+<a href="#contact">CONTACT</a>
+<a href="#contact">HIRE ME</a>
+</div>
+
 </nav>
 
-</header>
+<!-- HERO -->
 
 <section class="hero">
 
-<h1>High CTR Thumbnail Designer</h1>
+<h1>High CTR YouTube Thumbnails</h1>
 
-<p>
-I design professional YouTube thumbnails that grab attention  
-and increase your click-through rate.
-</p>
+<p>I design thumbnails that increase clicks and views.</p>
 
-<a class="btn" href="https://drive.google.com/drive/folders/15NWPQOTtkRJ0VDDd2KPna1C3maDxd8ba" target="_blank">
-View My Thumbnails
-</a>
+<a class="btn" href="#work">View My Work</a>
 
 </section>
 
-<section class="section" id="work">
+<!-- WORK -->
 
-<h2>My Thumbnail Work</h2>
+<section class="work" id="work">
 
-<div class="gallery">
+<h2>View My Thumbnails</h2>
 
-<div class="thumb">Thumbnail Preview</div>
-<div class="thumb">Thumbnail Preview</div>
-<div class="thumb">Thumbnail Preview</div>
-<div class="thumb">Thumbnail Preview</div>
+<div class="folder">
+
+<a href="https://drive.google.com/drive/folders/15NWPQOTtkRJ0VDDd2KPna1C3maDxd8ba" target="_blank">
+
+📁 Open Thumbnail Folder
+
+</a>
 
 </div>
 
 </section>
 
+<!-- CONTACT -->
+
 <section class="contact" id="contact">
 
-<h2>Let's Work Together</h2>
+<h2>Let's Connect</h2>
 
-<a href="mailto:kanhaeditorofficial@gmail.com">
-Email: kanhaeditorofficial@gmail.com
+<br>
+
+<a class="whatsapp" href="https://wa.me/919528503698">
+
+Connect Me On WhatsApp
+
 </a>
 
-<a href="https://wa.me/" target="_blank">
-Chat on WhatsApp
-</a>
+<form action="mailto:kanhaeditorofficial@gmail.com" method="post" enctype="text/plain">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<textarea placeholder="Project Details..." rows="5"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
 
 </section>
 
