@@ -3,175 +3,188 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Nexora Creative</title>
 
 <style>
 
-body{
+*{
 margin:0;
-font-family:Arial;
-background:#0b0b0b;
-color:white;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
 scroll-behavior:smooth;
 }
 
-/* NAVBAR */
+body{
+background:#0f0f0f;
+color:white;
+overflow-x:hidden;
+}
 
-nav{
+/* HEADER */
+
+header{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:15px 30px;
-background:#000;
+padding:20px 8%;
 position:sticky;
 top:0;
-z-index:100;
+background:#0f0f0f;
+z-index:1000;
 }
 
-.logo img{
-height:50px;
-}
-
-.menu a{
-margin:0 15px;
-color:white;
-text-decoration:none;
+.logo{
+font-size:28px;
 font-weight:bold;
+color:#00e5ff;
+letter-spacing:1px;
 }
 
-.menu a:hover{
-color:#ffd700;
+nav a{
+margin-left:30px;
+text-decoration:none;
+color:white;
+font-size:16px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#00e5ff;
 }
 
 /* HERO */
 
 .hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
-padding:80px 20px;
+padding:20px;
 }
 
 .hero h1{
-font-size:40px;
-color:#ffd700;
-margin-bottom:10px;
+font-size:42px;
+margin-bottom:15px;
 }
 
-.hero p{
-font-size:18px;
-opacity:.8;
+.trust{
+margin-top:10px;
+color:#aaa;
+font-size:15px;
 }
-
-/* BUTTON */
 
 .btn{
-display:inline-block;
 margin-top:25px;
-padding:14px 30px;
-background:#ffd700;
+padding:14px 32px;
+border:none;
+background:#00e5ff;
 color:black;
-font-weight:bold;
-border-radius:8px;
-text-decoration:none;
-box-shadow:0 0 20px #ffd700;
-transition:.3s;
+font-size:16px;
+border-radius:30px;
+cursor:pointer;
+transition:0.3s;
+box-shadow:0 0 15px #00e5ff;
 }
 
 .btn:hover{
 transform:scale(1.05);
-box-shadow:0 0 30px #ffd700;
+box-shadow:0 0 30px #00e5ff;
 }
 
-/* WORK SECTION */
+/* WORK */
 
 .work{
+padding:100px 10%;
 text-align:center;
-padding:80px 20px;
 }
 
 .folder{
 width:220px;
+height:180px;
 margin:auto;
-padding:40px;
+background:#1a1a1a;
 border-radius:15px;
-background:#111;
-box-shadow:0 0 20px rgba(255,215,0,.4);
-transition:.3s;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+cursor:pointer;
+transition:0.3s;
+box-shadow:0 0 20px rgba(0,229,255,0.2);
 }
 
 .folder:hover{
 transform:scale(1.05);
-box-shadow:0 0 30px gold;
+box-shadow:0 0 40px #00e5ff;
 }
 
-.folder a{
-text-decoration:none;
+.folder span{
+margin-top:10px;
+font-size:16px;
+}
+
+/* CONNECT */
+
+.connect{
+padding:100px 10%;
+text-align:center;
+}
+
+.whatsapp-btn{
+display:inline-block;
+margin-top:20px;
+padding:14px 32px;
+background:#25D366;
 color:white;
-font-weight:bold;
+border-radius:30px;
+text-decoration:none;
+font-size:16px;
+box-shadow:0 0 20px #25D366;
+transition:0.3s;
 }
 
-/* CONTACT */
+.whatsapp-btn:hover{
+transform:scale(1.05);
+box-shadow:0 0 40px #25D366;
+}
+
+/* CONTACT FORM */
 
 .contact{
+padding:100px 10%;
 text-align:center;
-padding:80px 20px;
 }
-
-.whatsapp{
-display:inline-block;
-background:#25D366;
-padding:15px 30px;
-border-radius:10px;
-color:white;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 0 20px #25D366;
-transition:.3s;
-}
-
-.whatsapp:hover{
-transform:scale(1.05);
-box-shadow:0 0 30px #25D366;
-}
-
-/* FORM */
 
 form{
-max-width:400px;
+max-width:500px;
 margin:auto;
-margin-top:40px;
+display:flex;
+flex-direction:column;
+gap:15px;
 }
 
 input,textarea{
-width:100%;
 padding:12px;
-margin:10px 0;
-background:#111;
-border:1px solid #333;
+border:none;
+border-radius:8px;
+background:#1a1a1a;
 color:white;
-border-radius:6px;
 }
 
 button{
-width:100%;
-padding:14px;
-background:#ffd700;
+padding:12px;
+background:#00e5ff;
 border:none;
-border-radius:8px;
-font-weight:bold;
+border-radius:25px;
 cursor:pointer;
+box-shadow:0 0 15px #00e5ff;
 }
 
 button:hover{
-box-shadow:0 0 20px #ffd700;
-}
-
-/* FOOTER */
-
-footer{
-text-align:center;
-padding:20px;
-opacity:.6;
+box-shadow:0 0 30px #00e5ff;
 }
 
 </style>
@@ -179,85 +192,81 @@ opacity:.6;
 
 <body>
 
-<!-- NAVBAR -->
+<header>
+
+<div class="logo">Nexora Creative</div>
 
 <nav>
-
-<div class="logo">
-<img src="Logo NEXORA creative.png">
-</div>
-
-<div class="menu">
-<a href="#work">WORK</a>
-<a href="#contact">CONTACT</a>
-<a href="#contact">HIRE ME</a>
-</div>
-
+<a href="#work">Work</a>
+<a href="#connect">Hire Me</a>
+<a href="#connect">Connect</a>
 </nav>
 
-<!-- HERO -->
+</header>
 
 <section class="hero">
 
-<h1>High CTR YouTube Thumbnails</h1>
+<h1>High-CTR YouTube Thumbnails That Get Clicks</h1>
 
-<p>I design thumbnails that increase clicks and views.</p>
+<div class="trust">
+Photoshop Expert • High-CTR Specialist • Trusted by Creators • Fast Delivery
+</div>
 
-<a class="btn" href="#work">View My Work</a>
+<a href="#work">
+<button class="btn">View My Thumbnails</button>
+</a>
 
 </section>
 
-<!-- WORK -->
-
 <section class="work" id="work">
 
-<h2>View My Thumbnails</h2>
+<h2>My Thumbnail Work</h2>
+<br><br>
 
-<div class="folder">
+<div class="folder"
+onclick="window.open('https://drive.google.com/drive/folders/15NWPQOTtkRJ0VDDd2KPna1C3maDxd8ba')">
 
-<a href="https://drive.google.com/drive/folders/15NWPQOTtkRJ0VDDd2KPna1C3maDxd8ba" target="_blank">
-
-📁 Open Thumbnail Folder
-
-</a>
+📁
+<span>View My Thumbnails</span>
 
 </div>
 
 </section>
 
-<!-- CONTACT -->
-
-<section class="contact" id="contact">
+<section class="connect" id="connect">
 
 <h2>Let's Connect</h2>
-
 <br>
 
-<a class="whatsapp" href="https://wa.me/919528503698">
+<p>WhatsApp: 9588503698</p>
+
+<a class="whatsapp-btn"
+href="https://wa.me/919588503698"
+target="_blank">
 
 Connect Me On WhatsApp
 
 </a>
 
+</section>
+
+<section class="contact">
+
+<h2>Send Me a Message</h2>
+
 <form action="mailto:kanhaeditorofficial@gmail.com" method="post" enctype="text/plain">
 
 <input type="text" placeholder="Your Name" required>
 
-<input type="email" placeholder="Email Address" required>
+<input type="email" placeholder="Your Email" required>
 
-<textarea placeholder="Project Details..." rows="5"></textarea>
+<textarea rows="5" placeholder="Your Message"></textarea>
 
-<button type="submit">Send Message</button>
+<button type="submit">Send Email</button>
 
 </form>
 
 </section>
-
-<footer>
-
-© 2026 Nexora Creative
-
-</footer>
 
 </body>
 </html>
