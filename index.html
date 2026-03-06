@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Nexora Creative</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -11,211 +14,154 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Poppins, sans-serif;
-scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-background:linear-gradient(135deg,#0f0f0f,#1a1a1a);
+background:#0b0b0b;
 color:white;
-overflow-x:hidden;
-}
-
-/* HERO */
-
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
 text-align:center;
-padding:20px;
+padding:40px 20px;
 }
 
-/* TITLE */
+/* LOGO */
 
 .logo{
-font-size:42px;
+font-size:34px;
 font-weight:700;
-background:linear-gradient(90deg,#ffcc00,#ff7b00);
+background:linear-gradient(90deg,#ffcc00,#ff8c00);
 -webkit-background-clip:text;
 color:transparent;
-margin-bottom:20px;
-letter-spacing:1px;
+margin-bottom:25px;
 }
 
-/* MAIN TEXT */
+/* HERO TITLE */
 
 .hero h1{
-font-size:34px;
-max-width:700px;
-line-height:1.4;
-margin-bottom:25px;
+font-size:36px;
+line-height:1.3;
+margin-bottom:30px;
 }
 
 /* TRUST WORDS */
 
 .trust{
 display:flex;
-flex-wrap:wrap;
-gap:15px;
-justify-content:center;
+flex-direction:column;
+align-items:center;
+gap:14px;
 margin-bottom:35px;
 }
 
 .trust span{
-padding:10px 18px;
-background:#1f1f1f;
-border-radius:30px;
-font-size:14px;
-box-shadow:0 0 15px rgba(255,170,0,0.4);
-transition:.3s;
+padding:12px 25px;
+background:#1a1a1a;
+border-radius:40px;
+font-size:15px;
+width:240px;
+box-shadow:0 0 15px rgba(255,170,0,0.5);
 }
 
-.trust span:hover{
-transform:scale(1.08);
-box-shadow:0 0 25px #ffb300;
-}
-
-/* BUTTON */
+/* MAIN BUTTON */
 
 .btn{
-padding:16px 40px;
-font-size:16px;
-border:none;
-border-radius:40px;
-cursor:pointer;
-background:linear-gradient(90deg,#ffcc00,#ff7b00);
-color:black;
+display:inline-block;
+margin-top:10px;
+padding:18px 45px;
+font-size:18px;
 font-weight:600;
-box-shadow:0 0 25px rgba(255,170,0,.6);
-transition:.3s;
+border-radius:50px;
+background:linear-gradient(90deg,#ffcc00,#ff8c00);
+color:black;
+text-decoration:none;
+box-shadow:0 0 25px rgba(255,170,0,0.8);
+transition:0.3s;
 }
 
 .btn:hover{
 transform:scale(1.05);
-box-shadow:0 0 45px #ffb300;
+box-shadow:0 0 40px rgba(255,170,0,1);
 }
 
-/* WORK SECTION */
+/* FOLDER CARD */
 
-.work{
-padding:120px 10%;
-text-align:center;
+.folder-section{
+margin-top:60px;
+display:flex;
+justify-content:center;
 }
 
-.work h2{
-font-size:30px;
-margin-bottom:40px;
-}
-
-.folder{
+.folder-card{
 width:260px;
-height:200px;
-margin:auto;
-background:#1f1f1f;
-border-radius:20px;
+height:160px;
+background:linear-gradient(145deg,#1c1c1c,#111);
+border-radius:18px;
+box-shadow:0 0 25px rgba(255,170,0,0.3);
 display:flex;
 flex-direction:column;
-justify-content:center;
 align-items:center;
+justify-content:center;
 cursor:pointer;
-transition:.3s;
-box-shadow:0 0 30px rgba(255,170,0,.3);
+transition:0.3s;
 }
 
-.folder:hover{
-transform:scale(1.08);
-box-shadow:0 0 50px #ffb300;
+.folder-card:hover{
+transform:translateY(-6px) scale(1.03);
+box-shadow:0 0 40px rgba(255,170,0,0.8);
 }
 
-.folder i{
-font-size:55px;
+.folder-icon{
+font-size:50px;
 margin-bottom:10px;
 }
 
-/* CONNECT */
+.folder-text{
+font-size:16px;
+opacity:0.8;
+}
+
+/* CONNECT SECTION */
 
 .connect{
-padding:120px 10%;
-text-align:center;
+margin-top:60px;
 }
 
 .connect h2{
-font-size:30px;
-margin-bottom:15px;
+margin-bottom:20px;
+font-size:26px;
 }
 
-.whatsapp{
+.whatsapp-btn{
 display:inline-block;
-margin-top:25px;
-padding:16px 35px;
+padding:15px 35px;
+border-radius:40px;
 background:#25D366;
 color:white;
-border-radius:40px;
 font-weight:600;
 text-decoration:none;
-box-shadow:0 0 25px #25D366;
-transition:.3s;
+box-shadow:0 0 20px rgba(37,211,102,0.7);
+transition:0.3s;
 }
 
-.whatsapp:hover{
+.whatsapp-btn:hover{
 transform:scale(1.05);
-box-shadow:0 0 45px #25D366;
-}
-
-/* CONTACT FORM */
-
-.contact{
-padding:120px 10%;
-text-align:center;
-}
-
-.contact h2{
-margin-bottom:35px;
-}
-
-form{
-max-width:500px;
-margin:auto;
-display:flex;
-flex-direction:column;
-gap:15px;
-}
-
-input,textarea{
-padding:14px;
-border:none;
-border-radius:10px;
-background:#1f1f1f;
-color:white;
-}
-
-.send{
-background:linear-gradient(90deg,#ffcc00,#ff7b00);
-border:none;
-padding:14px;
-border-radius:30px;
-cursor:pointer;
-font-weight:600;
-box-shadow:0 0 20px rgba(255,170,0,.5);
-}
-
-.send:hover{
-box-shadow:0 0 40px #ffb300;
+box-shadow:0 0 30px rgba(37,211,102,1);
 }
 
 </style>
+
 </head>
 
 <body>
 
-<section class="hero">
-
 <div class="logo">Nexora Creative</div>
 
-<h1>High-CTR YouTube Thumbnails That Make People Click</h1>
+<section class="hero">
+
+<h1>
+High-CTR YouTube Thumbnails<br>
+That Make People Click
+</h1>
 
 <div class="trust">
 
@@ -226,60 +172,39 @@ box-shadow:0 0 40px #ffb300;
 
 </div>
 
-<a href="#work">
-<button class="btn">View My Thumbnails</button>
+<a class="btn" href="https://drive.google.com/drive/folders/15NWPQOTtkRJ0VDDd2KPna1C3maDxd8ba" target="_blank">
+View My Thumbnails
 </a>
 
 </section>
 
-<section class="work" id="work">
 
-<h2>My Thumbnail Work</h2>
+<div class="folder-section">
 
-<div class="folder"
-onclick="window.open('https://drive.google.com/drive/folders/15NWPQOTtkRJ0VDDd2KPna1C3maDxd8ba')">
+<div class="folder-card" onclick="window.open('https://drive.google.com/drive/folders/15NWPQOTtkRJ0VDDd2KPna1C3maDxd8ba')">
 
-<div style="font-size:60px;">📁</div>
+<div class="folder-icon">📁</div>
 
-<p>Open Thumbnail Folder</p>
+<div class="folder-text">
+Open Thumbnail Portfolio
+</div>
 
 </div>
 
-</section>
+</div>
+
 
 <section class="connect">
 
 <h2>Let's Connect</h2>
 
-<p>WhatsApp: 9588503698</p>
+<a class="whatsapp-btn" href="https://wa.me/919528503698">
 
-<a class="whatsapp"
-href="https://wa.me/919588503698"
-target="_blank">
-
-Connect Me On WhatsApp
+Connect Me on WhatsApp
 
 </a>
 
 </section>
 
-<section class="contact">
-
-<h2>Send Me a Message</h2>
-
-<form action="mailto:kanhaeditorofficial@gmail.com" method="post">
-
-<input type="text" placeholder="Your Name" required>
-
-<input type="email" placeholder="Your Email" required>
-
-<textarea rows="5" placeholder="Your Message"></textarea>
-
-<button class="send">Send Email</button>
-
-</form>
-
-</section>
-
 </body>
-  </html>
+</html>
