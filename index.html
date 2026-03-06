@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -7,7 +8,7 @@
 
 <title>NEXORA Creative | Thumbnail Designer</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
 
 <style>
 
@@ -15,17 +16,59 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Outfit',sans-serif;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
+
 background:#050505;
 color:white;
+overflow-x:hidden;
+
 }
 
-/* NAVBAR */
+/* animated background */
+
+body::before{
+
+content:"";
+position:fixed;
+width:500px;
+height:500px;
+background:radial-gradient(circle,#ffd000,transparent);
+filter:blur(180px);
+top:-100px;
+left:-100px;
+animation:move 12s infinite alternate;
+
+}
+
+body::after{
+
+content:"";
+position:fixed;
+width:500px;
+height:500px;
+background:radial-gradient(circle,#ff9d00,transparent);
+filter:blur(180px);
+bottom:-100px;
+right:-100px;
+animation:move 10s infinite alternate;
+
+}
+
+@keyframes move{
+
+0%{transform:translate(0,0)}
+100%{transform:translate(100px,100px)}
+
+}
+
+/* navbar */
 
 nav{
+
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -33,33 +76,45 @@ padding:20px 8%;
 position:fixed;
 top:0;
 width:100%;
-background:#000;
-border-bottom:1px solid #111;
+background:rgba(0,0,0,0.8);
+backdrop-filter:blur(10px);
+z-index:1000;
+
 }
 
 .logo{
-font-size:20px;
-font-weight:800;
+
+font-size:26px;
+font-weight:900;
+
 }
 
 .logo span{
+
 color:#FFD700;
+
 }
 
 nav a{
-color:white;
+
+margin-left:30px;
 text-decoration:none;
-margin-left:25px;
+color:white;
 font-size:15px;
+position:relative;
+
 }
 
-nav a:last-child{
+nav a:hover{
+
 color:#FFD700;
+
 }
 
-/* HERO */
+/* hero */
 
 .hero{
+
 height:100vh;
 display:flex;
 flex-direction:column;
@@ -67,110 +122,215 @@ justify-content:center;
 align-items:center;
 text-align:center;
 padding:20px;
+
 }
 
 .hero h1{
-font-size:60px;
+
+font-size:70px;
 font-weight:900;
 line-height:1.1;
+
 }
 
 .hero span{
+
 color:#FFD700;
+
 }
 
 .hero p{
-margin-top:15px;
-color:#aaa;
-max-width:550px;
+
+margin-top:20px;
+color:#bbb;
+max-width:600px;
+
 }
 
 .btn{
-margin-top:30px;
-padding:16px 45px;
+
+margin-top:40px;
+padding:18px 45px;
+border-radius:8px;
 background:#FFD700;
 color:black;
 font-weight:700;
-border-radius:8px;
 text-decoration:none;
+transition:0.3s;
+
 }
 
-/* SKILLS */
+.btn:hover{
+
+transform:scale(1.05);
+
+}
+
+/* skills */
 
 .skills{
+
 display:flex;
 justify-content:center;
-gap:60px;
-padding:40px 10%;
+gap:70px;
+padding:50px 10%;
+flex-wrap:wrap;
 border-top:1px solid #111;
 border-bottom:1px solid #111;
-flex-wrap:wrap;
+
 }
 
 .skill{
+
 color:#aaa;
-font-size:16px;
+font-size:18px;
+
 }
 
-/* PORTFOLIO */
+/* portfolio */
 
 .portfolio{
-padding:90px 10%;
+
+padding:120px 10%;
 text-align:center;
+
 }
 
 .portfolio h2{
-font-size:40px;
-margin-bottom:30px;
+
+font-size:45px;
+margin-bottom:20px;
+
 }
 
 .card{
-background:#111;
-padding:40px;
-border-radius:15px;
-max-width:400px;
+
+background:#0e0e0e;
+padding:50px;
+border-radius:20px;
+max-width:450px;
 margin:auto;
 border:1px solid #222;
+transition:0.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
 }
 
 .card a{
+
 display:inline-block;
 margin-top:20px;
 border-bottom:2px solid #FFD700;
 color:white;
 text-decoration:none;
+
 }
 
-/* WHATSAPP */
+/* connect */
 
-.contact{
-padding:80px 10%;
+.connect{
+
+padding:120px 10%;
 text-align:center;
+
 }
 
-.whatsapp-btn{
+.connect h2{
+
+font-size:50px;
+margin-bottom:10px;
+
+}
+
+.connect span{
+
+color:#FFD700;
+
+}
+
+.connect p{
+
+color:#aaa;
+margin-bottom:30px;
+
+}
+
+/* whatsapp button */
+
+.whatsapp{
 
 display:inline-block;
-background:#25D366;
-padding:16px 35px;
-border-radius:50px;
-text-decoration:none;
-color:white;
+padding:20px 40px;
+border-radius:60px;
+background:linear-gradient(45deg,#25D366,#00ff7b);
+font-size:18px;
 font-weight:700;
-margin-top:20px;
+color:white;
+text-decoration:none;
+box-shadow:0 0 25px #25D366;
+transition:0.3s;
 
 }
 
-/* FOOTER */
+.whatsapp:hover{
+
+transform:scale(1.07);
+box-shadow:0 0 40px #25D366;
+
+}
+
+/* form */
+
+.form{
+
+max-width:500px;
+margin:50px auto 0;
+
+}
+
+.form input,
+.form textarea{
+
+width:100%;
+padding:18px;
+margin-bottom:20px;
+border-radius:10px;
+border:none;
+background:#111;
+color:white;
+
+}
+
+.form button{
+
+width:100%;
+padding:18px;
+background:#FFD700;
+border:none;
+font-weight:700;
+border-radius:10px;
+cursor:pointer;
+
+}
+
+/* footer */
 
 footer{
+
 text-align:center;
-padding:30px;
+padding:40px;
 color:#555;
 border-top:1px solid #111;
+
 }
 
 </style>
+
 </head>
 
 <body>
@@ -182,8 +342,11 @@ NEXORA <span>Creative</span>
 </div>
 
 <div>
+
 <a href="#work">Work</a>
-<a href="#contact">Hire Me</a>
+<a href="#connect">Connect</a>
+<a href="#connect">Hire Me</a>
+
 </div>
 
 </nav>
@@ -191,13 +354,17 @@ NEXORA <span>Creative</span>
 <section class="hero">
 
 <h1>
+
 High-CTR <br>
 <span>YouTube Thumbnails</span>
+
 </h1>
 
 <p>
+
 I design professional YouTube thumbnails that attract clicks,
-boost CTR and make your videos stand out.
+boost CTR and help videos perform better.
+
 </p>
 
 <a href="#work" class="btn">View My Work</a>
@@ -215,7 +382,7 @@ boost CTR and make your videos stand out.
 
 <section class="portfolio" id="work">
 
-<h2>My Portfolio</h2>
+<h2>Thumbnail Portfolio</h2>
 
 <div class="card">
 
@@ -224,20 +391,38 @@ boost CTR and make your videos stand out.
 <p>Click below to explore my thumbnail collection.</p>
 
 <a href="https://drive.google.com/drive/folders/15NWPQOTtkRJ0VDDd2KPna1C3maDxd8ba" target="_blank">
+
 View Thumbnails
+
 </a>
 
 </div>
 
 </section>
 
-<section class="contact" id="contact">
+<section class="connect" id="connect">
 
-<h2>Contact Me</h2>
+<h2>Let's <span>Connect</span></h2>
 
-<a class="whatsapp-btn" href="https://wa.me/919528503698">
-Contact Me on WhatsApp
+<p>Need high CTR thumbnails for your channel?</p>
+
+<a class="whatsapp" href="https://wa.me/919528503698">
+
+💬 Contact Me on WhatsApp
+
 </a>
+
+<div class="form">
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email Address">
+
+<textarea rows="5" placeholder="Project Details"></textarea>
+
+<button>Send Message</button>
+
+</div>
 
 </section>
 
@@ -248,4 +433,5 @@ Contact Me on WhatsApp
 </footer>
 
 </body>
+
 </html>
